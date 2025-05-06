@@ -9,13 +9,13 @@ Now NO MORE! With this Automator script it is as easy as selecting your photos a
 
 This script is dependent on:
 
-* [ImageMagic](http://www.imagemagick.org/script/index.php): it processes the images.
-* Mac OS: if you want to use it as a service
+- [ImageMagic](http://www.imagemagick.org/script/index.php): it processes the images.
+- Mac OS: if you want to use it as a service
 
 ## Installing
 
 1. Download the script from the repo
-2. Copy the Automator script `Combine Images.workflow` inside `~/Library/Services`
+2. Double click on the `Combine Images.workflow` script, and click on Install
 
 That should be it.
 

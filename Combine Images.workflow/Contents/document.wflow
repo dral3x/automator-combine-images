@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.39</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -113,7 +113,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:228.000000</string>
+				<string>309.000000:226.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -223,7 +223,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:330.000000</string>
+				<string>309.000000:328.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -344,9 +344,9 @@ echo $FOLDER/Combined.jpg</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -357,9 +357,9 @@ echo $FOLDER/Combined.jpg</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -397,7 +397,7 @@ echo $FOLDER/Combined.jpg</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:512.000000</string>
+				<string>309.000000:510.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -507,7 +507,7 @@ echo $FOLDER/Combined.jpg</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:617.000000</string>
+				<string>309.000000:613.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -619,7 +619,7 @@ echo $FOLDER/Combined.jpg</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:719.000000</string>
+				<string>309.000000:715.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -729,7 +729,7 @@ echo $FOLDER/Combined.jpg</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:821.000000</string>
+				<string>309.000000:817.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -788,7 +788,7 @@ echo $FOLDER/Combined.jpg</string>
 					<string>combined=$1
 shift
 for image in "$@"; do
-	/usr/local/bin/convert "$@" +append "$combined"
+	/opt/homebrew/bin/convert "$@" +append "$combined"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -851,9 +851,9 @@ done</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -864,9 +864,9 @@ done</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -904,7 +904,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:1003.000000</string>
+				<string>309.000000:999.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1014,7 +1014,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>560.500000:1105.000000</string>
+				<string>309.000000:1101.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1094,68 +1094,74 @@ done</string>
 				</array>
 				<key>arguments</key>
 				<dict/>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>207.000000:68.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Open Images in Preview.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>1C88C8C4-1B0E-4F7F-9300-E3994E7EA216</key>
+		<key>22BCF4B3-CAA3-48EB-AAB4-565F5C6E86B1</key>
 		<dict>
 			<key>from</key>
+			<string>014F40DE-4590-4DA4-AE09-2D31BB3CF7E4 - 014F40DE-4590-4DA4-AE09-2D31BB3CF7E4</string>
+			<key>to</key>
+			<string>AAB8CDFC-865A-427B-B9C3-F546947F5207 - AAB8CDFC-865A-427B-B9C3-F546947F5207</string>
+		</dict>
+		<key>32E80AEB-5F71-4B10-8FE3-E30D08CC8C9E</key>
+		<dict>
+			<key>from</key>
+			<string>16656377-0D1F-415A-A8E0-92E5A06B2738 - 16656377-0D1F-415A-A8E0-92E5A06B2738</string>
+			<key>to</key>
 			<string>C3AA06D1-2B07-4829-B043-3BCB3B7C3662 - C3AA06D1-2B07-4829-B043-3BCB3B7C3662</string>
-			<key>to</key>
-			<string>F0692D06-702F-4FBA-838E-44574D289318 - F0692D06-702F-4FBA-838E-44574D289318</string>
 		</dict>
-		<key>3ADE1480-87E9-4D57-8BAD-9B1B714C8DFA</key>
-		<dict>
-			<key>from</key>
-			<string>F0692D06-702F-4FBA-838E-44574D289318 - F0692D06-702F-4FBA-838E-44574D289318</string>
-			<key>to</key>
-			<string>134A08CE-98A4-42FA-8556-8C5F8C904CC7 - 134A08CE-98A4-42FA-8556-8C5F8C904CC7</string>
-		</dict>
-		<key>529E7BA5-FDAD-4155-A92F-03ED97EA1AE2</key>
-		<dict>
-			<key>from</key>
-			<string>AAB8CDFC-865A-427B-B9C3-F546947F5207 - AAB8CDFC-865A-427B-B9C3-F546947F5207</string>
-			<key>to</key>
-			<string>8155D098-B3A9-49E8-BB58-0360645DA404 - 8155D098-B3A9-49E8-BB58-0360645DA404</string>
-		</dict>
-		<key>53C51F4F-8382-4747-BF64-966BC02D3B96</key>
-		<dict>
-			<key>from</key>
-			<string>014F40DE-4590-4DA4-AE09-2D31BB3CF7E4 - 014F40DE-4590-4DA4-AE09-2D31BB3CF7E4</string>
-			<key>to</key>
-			<string>AAB8CDFC-865A-427B-B9C3-F546947F5207 - AAB8CDFC-865A-427B-B9C3-F546947F5207</string>
-		</dict>
-		<key>5C914466-BF25-4F49-BB15-40C9280A9F0D</key>
-		<dict>
-			<key>from</key>
-			<string>8155D098-B3A9-49E8-BB58-0360645DA404 - 8155D098-B3A9-49E8-BB58-0360645DA404</string>
-			<key>to</key>
-			<string>D374351E-14C1-44B5-92E2-17A7EC2D5EAF - D374351E-14C1-44B5-92E2-17A7EC2D5EAF</string>
-		</dict>
-		<key>8C855F0C-6F1A-41C0-8ECE-01E83983F455</key>
+		<key>48F43B56-AE3F-4D4F-B75D-F86E1520BA89</key>
 		<dict>
 			<key>from</key>
 			<string>134A08CE-98A4-42FA-8556-8C5F8C904CC7 - 134A08CE-98A4-42FA-8556-8C5F8C904CC7</string>
 			<key>to</key>
 			<string>014F40DE-4590-4DA4-AE09-2D31BB3CF7E4 - 014F40DE-4590-4DA4-AE09-2D31BB3CF7E4</string>
 		</dict>
-		<key>BB0E7167-FDD0-43BB-92FA-99D95B19F205</key>
+		<key>7DDF6D0A-90DD-4986-82CB-B7AD876DC770</key>
 		<dict>
 			<key>from</key>
 			<string>8C504F9C-5B48-4167-AAD4-46E21F75B6DA - 8C504F9C-5B48-4167-AAD4-46E21F75B6DA</string>
 			<key>to</key>
 			<string>16656377-0D1F-415A-A8E0-92E5A06B2738 - 16656377-0D1F-415A-A8E0-92E5A06B2738</string>
 		</dict>
-		<key>F3371CA0-3FB0-4824-A1C9-B65A1A2A9A8F</key>
+		<key>8D1C2D9C-E64E-427E-8EB4-63FD09291BB5</key>
 		<dict>
 			<key>from</key>
-			<string>16656377-0D1F-415A-A8E0-92E5A06B2738 - 16656377-0D1F-415A-A8E0-92E5A06B2738</string>
+			<string>8155D098-B3A9-49E8-BB58-0360645DA404 - 8155D098-B3A9-49E8-BB58-0360645DA404</string>
 			<key>to</key>
+			<string>D374351E-14C1-44B5-92E2-17A7EC2D5EAF - D374351E-14C1-44B5-92E2-17A7EC2D5EAF</string>
+		</dict>
+		<key>C6F24DC8-424C-426D-A747-507A56049EF5</key>
+		<dict>
+			<key>from</key>
+			<string>AAB8CDFC-865A-427B-B9C3-F546947F5207 - AAB8CDFC-865A-427B-B9C3-F546947F5207</string>
+			<key>to</key>
+			<string>8155D098-B3A9-49E8-BB58-0360645DA404 - 8155D098-B3A9-49E8-BB58-0360645DA404</string>
+		</dict>
+		<key>D121AD93-D350-4CF1-AD7A-982F94A7F54E</key>
+		<dict>
+			<key>from</key>
 			<string>C3AA06D1-2B07-4829-B043-3BCB3B7C3662 - C3AA06D1-2B07-4829-B043-3BCB3B7C3662</string>
+			<key>to</key>
+			<string>F0692D06-702F-4FBA-838E-44574D289318 - F0692D06-702F-4FBA-838E-44574D289318</string>
+		</dict>
+		<key>F37E5A45-6E63-4175-B31C-988F88DBF6AB</key>
+		<dict>
+			<key>from</key>
+			<string>F0692D06-702F-4FBA-838E-44574D289318 - F0692D06-702F-4FBA-838E-44574D289318</string>
+			<key>to</key>
+			<string>134A08CE-98A4-42FA-8556-8C5F8C904CC7 - 134A08CE-98A4-42FA-8556-8C5F8C904CC7</string>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -1199,7 +1205,7 @@ done</string>
 		<key>presentationMode</key>
 		<integer>15</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceApplicationBundleID</key>
 		<string>com.apple.finder</string>
 		<key>serviceApplicationPath</key>
@@ -1209,11 +1215,11 @@ done</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSTouchBarCompose</string>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
